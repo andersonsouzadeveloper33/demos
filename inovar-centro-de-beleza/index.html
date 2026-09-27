@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Salão de beleza no Jardim Irajá, Ribeirão Preto. Coloração, escova, cachos e unhas. Agende pelo WhatsApp.">
+<meta property="og:title" content="Inovar Centro de Beleza – demonstração">
+<meta property="og:description" content="Proposta de site para o Inovar Centro de Beleza, Ribeirão Preto.">
+<title>Inovar Centro de Beleza</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;1,6..96,400&family=Figtree:wght@400;500;600&display=swap">
+<style>
+html{-webkit-text-size-adjust:100%}body{margin:0}img{max-width:100%}
+
+:root{
+  --ground:#F5EFF2; --paper:#FFFBFD; --ink:#2A1622; --muted:#735F6B; --line:#E5D5DE;
+  --berry:#8C1D4F; --berry-ink:#FFFFFF; --tint:#F1DCE7; --gold:#9A6B2E;
+  --demo-bg:#2A1622; --demo-ink:#F5EFF2;
+  --serif:"Bodoni Moda", "Didot", "Times New Roman", serif;
+  --sans:"Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#1A1016; --paper:#241720; --ink:#F4E8EE; --muted:#BFA8B5; --line:#3D2A35;
+    --berry:#E0719F; --berry-ink:#1A1016; --tint:#35202C; --gold:#D6A764;
+    --demo-bg:#F1DCE7; --demo-ink:#2A1622; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#1A1016; --paper:#241720; --ink:#F4E8EE; --muted:#BFA8B5; --line:#3D2A35;
+  --berry:#E0719F; --berry-ink:#1A1016; --tint:#35202C; --gold:#D6A764;
+  --demo-bg:#F1DCE7; --demo-ink:#2A1622; color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font:400 17px/1.6 var(--sans);}
+a{color:inherit}
+.demo{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--demo-bg);color:var(--demo-ink);
+  font:500 13px/1.4 var(--sans);letter-spacing:.04em;text-align:center;padding:9px 16px}
+.demo strong{font-weight:600}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:clamp(16px,4vw,40px)}
+header.top{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:22px}
+.logo{font:600 22px/1 var(--serif);letter-spacing:.02em}
+.logo em{font-style:italic;font-weight:400;color:var(--berry)}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--berry);color:var(--berry-ink);text-decoration:none;
+  font:600 16px/1 var(--sans);padding:16px 24px;border-radius:999px;transition:transform .15s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn:focus-visible,.ghost:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.btn svg{width:20px;height:20px;flex:none}
+.ghost{font:600 15px/1 var(--sans);text-decoration:none;border-bottom:1.5px solid currentColor;padding-bottom:3px}
+.top .btn{padding:11px 18px;font-size:14px}
+
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,5vw,72px);align-items:center;padding-block:clamp(24px,5vw,64px) clamp(40px,6vw,88px)}
+.eyebrow{font:600 12px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+h1{font:400 clamp(44px,7vw,86px)/1.02 var(--serif);letter-spacing:-.01em;margin:18px 0 22px;text-wrap:balance}
+h1 em{color:var(--berry)}
+.lead{font-size:19px;color:var(--muted);max-width:34em;margin:0 0 30px}
+.cta-row{display:flex;flex-wrap:wrap;gap:22px;align-items:center}
+.stars{display:flex;align-items:center;gap:14px;margin-top:34px;padding-top:24px;border-top:1px solid var(--line)}
+.stars b{font:400 44px/1 var(--serif)}
+.stars .s{color:var(--gold);letter-spacing:2px;font-size:18px}
+.stars small{display:block;color:var(--muted);font-size:14px}
+
+/* cartela de cores */
+.cartela{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:22px 22px 18px;transform:rotate(1.5deg);
+  box-shadow:0 30px 60px -30px rgba(42,22,34,.35)}
+.cartela h2{font:600 11px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin:0 0 16px;display:flex;justify-content:space-between}
+.mechas{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.mecha{display:flex;flex-direction:column;gap:8px}
+.mecha i{display:block;height:120px;border-radius:40% 40% 8px 8px / 18% 18% 8px 8px;
+  background:linear-gradient(100deg,var(--c1) 0%,var(--c2) 45%,var(--c1) 70%,var(--c2) 100%);}
+.mecha span{font:600 18px/1 var(--serif);font-variant-numeric:tabular-nums}
+.mecha small{font-size:12px;line-height:1.3;color:var(--muted)}
+
+section{padding-block:clamp(48px,7vw,96px)}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:40px}
+h2.t{font:400 clamp(34px,4.6vw,54px)/1.08 var(--serif);margin:10px 0 0;text-wrap:balance;max-width:16em}
+.servicos{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--ink)}
+.serv{padding:26px 22px 30px 0;border-right:1px solid var(--line);display:flex;flex-direction:column;gap:10px}
+.serv + .serv{padding-left:22px}
+.serv:last-child{border-right:0}
+.serv h3{font:600 23px/1.15 var(--serif);margin:0}
+.serv p{margin:0;color:var(--muted);font-size:15.5px}
+.serv .tag{font:600 11px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--berry)}
+
+.reviews{background:var(--tint)}
+.rgrid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:clamp(20px,3vw,36px);align-items:start}
+blockquote{margin:0;display:flex;flex-direction:column;gap:18px}
+blockquote p{margin:0;font:400 21px/1.45 var(--serif)}
+blockquote:first-child p{font-size:clamp(26px,3vw,34px);line-height:1.25;font-style:italic}
+cite{font:500 14px/1.3 var(--sans);font-style:normal;color:var(--muted)}
+cite .s{color:var(--gold);letter-spacing:1px;margin-right:6px}
+.gbadge{display:inline-flex;gap:10px;align-items:baseline;font-size:15px;color:var(--muted)}
+.gbadge b{font:400 30px/1 var(--serif);color:var(--ink)}
+
+.sobre{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,72px);align-items:start}
+.sobre p{margin:0 0 16px;max-width:34em}
+.selos{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.selo{border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:14px;background:var(--paper)}
+
+.visita{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);background:var(--paper);border-radius:6px;overflow:hidden}
+.visita > div{padding:clamp(22px,3.5vw,40px)}
+.visita > div + div{border-left:1px solid var(--line)}
+.horas{list-style:none;padding:0;margin:14px 0 0;font-variant-numeric:tabular-nums}
+.horas li{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px dashed var(--line)}
+.horas li.off{color:var(--muted)}
+.visita h3{font:600 26px/1.2 var(--serif);margin:0}
+.addr{font-size:18px;margin:14px 0 20px}
+.fone{font:600 22px/1 var(--sans);font-variant-numeric:tabular-nums;margin:6px 0 20px;user-select:all}
+
+.final{padding-top:clamp(32px,5vw,56px);display:flex;justify-content:space-between;align-items:center;gap:28px;flex-wrap:wrap;border-top:1px solid var(--ink)}
+.final h2{font:400 clamp(32px,4.4vw,52px)/1.08 var(--serif);margin:0;max-width:14em;text-wrap:balance}
+footer{padding-block:28px 96px;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+
+.fab{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:15;width:60px;height:60px;border-radius:50%;
+  background:#1FA855;color:#fff;display:grid;place-items:center;box-shadow:0 12px 28px -8px rgba(0,0,0,.4)}
+.fab svg{width:30px;height:30px}
+
+@media (max-width:860px){
+  .hero,.sobre,.visita{grid-template-columns:1fr}
+  .visita > div + div{border-left:0;border-top:1px solid var(--line)}
+  .cartela{transform:none}
+  .servicos{grid-template-columns:1fr 1fr}
+  .serv{border-right:0;border-bottom:1px solid var(--line);padding:22px 12px 24px 0}
+  .serv + .serv{padding-left:0}
+  .serv:nth-child(odd){padding-right:16px;border-right:1px solid var(--line)}
+  .serv:nth-child(even){padding-left:16px}
+  .rgrid{grid-template-columns:1fr}
+}
+@media (max-width:520px){
+  .servicos{grid-template-columns:1fr}
+  .serv:nth-child(odd){border-right:0;padding-right:0}
+  .serv:nth-child(even){padding-left:0}
+  .top .btn{display:none}
+  .mecha i{height:90px}
+}
+@media (prefers-reduced-motion:reduce){.btn{transition:none}}
+</style>
+
+</head>
+<body>
+<div class="demo" role="note"><strong>Demonstração</strong> – proposta para Inovar Centro de Beleza</div>
+
+<div class="wrap">
+  <header class="top">
+    <div class="logo">Inovar <em>centro de beleza</em></div>
+    <a class="btn" href="https://wa.me/5516997877577?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">Agendar horário</a>
+  </header>
+
+  <div class="hero">
+    <div>
+      <div class="eyebrow">Salão de beleza · Jardim Irajá, Ribeirão Preto</div>
+      <h1>A cor exata que você <em>imaginou</em>, feita com calma.</h1>
+      <p class="lead">Coloração, escova, cachos e unhas num espaço acolhedor, com café passado e uma equipe que acompanha você há anos. Agende direto pelo WhatsApp, sem ligação e sem espera.</p>
+      <div class="cta-row">
+        <a class="btn" href="https://wa.me/5516997877577?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3Z"/></svg>
+          Agendar pelo WhatsApp
+        </a>
+        <a class="ghost" href="#servicos">Ver serviços</a>
+      </div>
+      <div class="stars">
+        <b>5,0</b>
+        <div><span class="s" aria-hidden="true">★★★★★</span><small>342 avaliações no Google</small></div>
+      </div>
+    </div>
+
+    <aside class="cartela" aria-label="Cartela de cores">
+      <h2><span>Cartela de cores</span><span>Nível · reflexo</span></h2>
+      <div class="mechas">
+        <div class="mecha"><i style="--c1:#3B2417;--c2:#5A3A26"></i><span>5.0</span><small>Castanho claro natural</small></div>
+        <div class="mecha"><i style="--c1:#8E6A45;--c2:#B08B62"></i><span>7.1</span><small>Louro médio acinzentado</small></div>
+        <div class="mecha"><i style="--c1:#D2B07A;--c2:#E8CFA0"></i><span>9.3</span><small>Louro muito claro dourado</small></div>
+        <div class="mecha"><i style="--c1:#6B1E24;--c2:#93303A"></i><span>5.62</span><small>Castanho claro vermelho irisado</small></div>
+        <div class="mecha"><i style="--c1:#6E4630;--c2:#94643F"></i><span>6.7</span><small>Louro escuro marrom</small></div>
+        <div class="mecha"><i style="--c1:#1C1414;--c2:#332726"></i><span>2.0</span><small>Preto natural</small></div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<section id="servicos">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="eyebrow">Serviços</div><h2 class="t">Da raiz às pontas, das mãos aos pés</h2></div>
+      <a class="ghost" href="https://wa.me/5516997877577?text=Ol%C3%A1!%20Quero%20saber%20valores%20dos%20servi%C3%A7os." target="_blank" rel="noopener">Consultar valores</a>
+    </div>
+    <div class="servicos">
+      <div class="serv"><span class="tag">Cor</span><h3>Coloração e retoque de raiz</h3><p>Diagnóstico do fio e escolha do tom com você, para o resultado sair igual ao que combinamos.</p></div>
+      <div class="serv"><span class="tag">Finalização</span><h3>Escova e modelagem</h3><p>Escova lisa, modelada ou com movimento, para o dia a dia ou para um evento.</p></div>
+      <div class="serv"><span class="tag">Textura</span><h3>Cachos</h3><p>Corte e finalização que respeitam a curvatura natural, com definição que dura.</p></div>
+      <div class="serv"><span class="tag">Mãos e pés</span><h3>Manicure e pedicure</h3><p>Cutilagem caprichada e esmaltação com acabamento de salão, tudo no mesmo horário.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="eyebrow">O que as clientes dizem</div><h2 class="t">Nota máxima, avaliação por avaliação</h2></div>
+      <div class="gbadge"><b>5,0</b> média de 342 avaliações no Google</div>
+    </div>
+    <div class="rgrid">
+      <blockquote><p>“Fiz coloração da raiz com a Andréia e amei! Ela acertou o tom exato e fez uma escova linda.”</p><cite><span class="s">★★★★★</span>Cliente no Google · há 1 mês</cite></blockquote>
+      <blockquote><p>“Atendimento maravilhoso! Profissionais excelentes, um ambiente tranquilo e aconchegante.”</p><cite><span class="s">★★★★★</span>Karoline C. · Google</cite></blockquote>
+      <blockquote><p>“A Má está sempre se aperfeiçoando, isso faz toda diferença. Espaço acolhedor, equipe maravilhosa.”</p><cite><span class="s">★★★★★</span>Lidiane L. · Google</cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap sobre">
+    <div><div class="eyebrow">Sobre o Inovar</div><h2 class="t">Um salão de empreendedoras, feito para você se sentir em casa</h2></div>
+    <div>
+      <p>O Inovar nasceu do trabalho da Má Duarte, que atende clientes fiéis há quase dez anos. Hoje a equipe reúne especialistas em cor, finalização, cachos e unhas.</p>
+      <p>Aqui o horário é seu: dá tempo de conversar sobre o que você quer, tomar um café e sair com o cabelo do jeito que imaginou.</p>
+      <div class="selos"><span class="selo">Empresa de empreendedoras</span><span class="selo">Acolhe a comunidade LGBTQ+</span><span class="selo">Café por conta da casa</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="visita">
+  <div class="wrap">
+    <div class="visita">
+      <div>
+        <div class="eyebrow">Onde estamos</div>
+        <p class="addr">R. Dr. Benjamim Anderson Stauffer, 294<br>Jardim Irajá, Ribeirão Preto – SP<br>CEP 14020-350</p>
+        <div class="eyebrow">WhatsApp</div>
+        <p class="fone">(16) 99787-7577</p>
+        <div class="cta-row">
+          <a class="btn" href="https://wa.me/5516997877577?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+          <a class="ghost" href="https://www.google.com/maps/search/?api=1&query=Inovar+Centro+de+Beleza&query_place_id=ChIJuYJbUyu_uZQRJTcmShlhFTc" target="_blank" rel="noopener">Como chegar</a>
+        </div>
+      </div>
+      <div>
+        <h3>Horário de atendimento</h3>
+        <ul class="horas">
+          <li><span>Terça a sexta</span><span>8h – 18h</span></li>
+          <li><span>Sábado</span><span>8h – 18h</span></li>
+          <li class="off"><span>Domingo e segunda</span><span>Fechado</span></li>
+        </ul>
+        <p style="color:var(--muted);font-size:15px;margin:18px 0 0">Sábado é o dia mais concorrido. Reserve com alguns dias de antecedência.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap"><div class="final">
+    <h2>Seu próximo horário está a uma mensagem de distância.</h2>
+    <a class="btn" href="https://wa.me/5516997877577?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+  </div></div>
+</section>
+
+<footer>
+  <div class="wrap">Demonstração criada por Anderson Souza como proposta para o Inovar Centro de Beleza. Textos e avaliações baseados em informações públicas do Google; fotos reais do salão entram na versão final.</div>
+</footer>
+
+<a class="fab" href="https://wa.me/5516997877577?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener" aria-label="Agendar pelo WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3Z"/></svg>
+</a>
+
+</body>
+</html>
