@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Carina Lima Beauty Studio | Reconstrução de Sobrancelhas em Ribeirão Preto</title>
+<meta name="description" content="Reconstrução de sobrancelhas, despigmentação a laser e regeneração com Long+ em Ribeirão Preto. Tudo começa com uma avaliação personalizada. Nota 5,0 no Google.">
+<meta property="og:title" content="Carina Lima Beauty Studio">
+<meta property="og:description" content="Sob medida para a beleza que existe em você. Com técnica, propósito e naturalidade.">
+<meta property="og:image" content="img/hero-carina.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23EFE9E2'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='30' fill='%23A8875C'%3ECL%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F4F0EB; --bg2:#EBE4DC; --stone:#DCD2C7; --ink:#2F2824; --ink2:#5E534B;
+  --muted:#8A7E74; --gold:#A8875C; --gold-l:#C9AE87; --white:#FFFDFB; --line:rgba(47,40,36,.14);
+  --serif:'Bodoni Moda',Georgia,serif; --sans:'Jost',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:300;font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+.eyebrow{font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);font-weight:500}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.12;letter-spacing:-.01em}
+h2{font-size:clamp(34px,4.6vw,56px)}
+h2 em,h1 em{font-style:italic;color:var(--gold)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 28px;border-radius:999px;font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:500;transition:.25s}
+.btn-dark{background:var(--ink);color:var(--white)}
+.btn-dark:hover{background:var(--gold)}
+.btn-line{border:1px solid var(--ink);color:var(--ink)}
+.btn-line:hover{background:var(--ink);color:var(--white)}
+section{padding:120px 0}
+
+/* nav */
+.nav{position:fixed;inset:0 0 auto;z-index:50;transition:.3s}
+.nav.solid{background:rgba(244,240,235,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:78px}
+.brand{display:flex;align-items:center;gap:14px}
+.mono{width:44px;height:44px;border:1px solid var(--gold-l);border-radius:50%;display:grid;place-items:center;font-family:var(--serif);font-style:italic;color:var(--gold);font-size:19px}
+.brand b{display:block;font-family:var(--serif);font-weight:400;font-size:19px;letter-spacing:.06em;line-height:1}
+.brand small{font-size:10px;letter-spacing:.38em;text-transform:uppercase;color:var(--muted)}
+.links{display:flex;gap:34px;font-size:13px;letter-spacing:.12em;text-transform:uppercase}
+.links a:hover{color:var(--gold)}
+.nav .btn{padding:12px 22px;font-size:12px}
+@media(max-width:960px){.links{display:none}}
+@media(max-width:560px){.nav .btn{display:none}}
+
+/* hero */
+.hero{padding:150px 0 100px;position:relative}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:center}
+.hero h1{font-size:clamp(44px,6.2vw,84px);margin:22px 0 26px}
+.hero p.lead{font-size:19px;color:var(--ink2);max-width:520px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:14px;margin:38px 0 46px}
+.rating{display:flex;align-items:center;gap:16px;padding-top:28px;border-top:1px solid var(--line);max-width:520px}
+.rating .score{font-family:var(--serif);font-size:44px;line-height:1}
+.stars{color:var(--gold);letter-spacing:3px;font-size:15px}
+.rating small{display:block;color:var(--muted);font-size:14px}
+.arch{position:relative;justify-self:end;width:100%;max-width:470px}
+.arch .frame{border-radius:240px 240px 6px 6px;overflow:hidden;aspect-ratio:4/5;background:var(--stone)}
+.arch .frame img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.arch::before{content:"";position:absolute;inset:-18px -18px 18px 18px;border:1px solid var(--gold-l);border-radius:258px 258px 8px 8px;z-index:-1}
+.arch .tag{position:absolute;left:-40px;bottom:46px;background:var(--white);padding:18px 22px;border-radius:4px;box-shadow:0 20px 50px -20px rgba(47,40,36,.35);font-size:14px;line-height:1.45}
+.arch .tag b{display:block;font-family:var(--serif);font-weight:400;font-style:italic;font-size:20px;color:var(--gold)}
+@media(max-width:900px){
+  .hero{padding:120px 0 70px}
+  .hero .wrap{grid-template-columns:1fr;gap:56px}
+  .arch{justify-self:center;max-width:380px}
+  .arch .tag{left:-14px}
+}
+
+/* manifesto */
+.manifesto{background:var(--ink);color:var(--bg);padding:110px 0;text-align:center}
+.manifesto blockquote{font-family:var(--serif);font-size:clamp(28px,3.8vw,46px);line-height:1.3;max-width:900px;margin:26px auto 30px}
+.manifesto blockquote em{color:var(--gold-l)}
+.manifesto p{color:#BDB2A7;max-width:620px;margin:0 auto}
+.manifesto .sign{margin-top:28px;font-family:var(--serif);font-style:italic;color:var(--gold-l);font-size:22px}
+
+/* avaliação */
+.eval .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;align-items:center}
+.eval .pics{position:relative;height:640px}
+.eval .pics img{position:absolute;object-fit:cover;border-radius:4px}
+.eval .pics .a{width:68%;height:82%;top:0;left:0}
+.eval .pics .b{width:46%;height:52%;right:0;bottom:0;border:10px solid var(--bg)}
+.eval h2{margin:18px 0 22px}
+.eval .intro{color:var(--ink2);margin-bottom:40px}
+.steps{list-style:none;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:64px 1fr;gap:6px;padding:24px 0;border-top:1px solid var(--line)}
+.steps li::before{content:"0" counter(s);font-family:var(--serif);font-style:italic;font-size:30px;color:var(--gold);line-height:1}
+.steps h3{font-size:23px;margin-bottom:6px}
+.steps p{color:var(--ink2);font-size:16px}
+@media(max-width:900px){.eval .wrap{grid-template-columns:1fr;gap:50px}.eval .pics{height:520px}}
+
+/* tratamentos */
+.treat{background:var(--bg2)}
+.head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:60px;flex-wrap:wrap}
+.head h2{margin-top:16px}
+.head p{max-width:420px;color:var(--ink2)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:var(--white);padding:38px 34px 34px;border-radius:4px;display:flex;flex-direction:column;transition:.3s;border:1px solid transparent}
+.card:hover{transform:translateY(-4px);border-color:var(--gold-l)}
+.card .num{font-size:11px;letter-spacing:.3em;color:var(--gold);font-weight:500;margin-bottom:22px;text-transform:uppercase}
+.card h3{font-size:28px;margin-bottom:14px}
+.card p{color:var(--ink2);font-size:16px;flex:1}
+.card a{margin-top:26px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:500;color:var(--ink);display:inline-flex;gap:8px;border-bottom:1px solid var(--gold-l);padding-bottom:4px;align-self:flex-start}
+.card a:hover{color:var(--gold)}
+.card.feat{background:var(--ink);color:var(--bg)}
+.card.feat p{color:#C9BEB3}
+.card.feat a{color:var(--bg)}
+.card.feat h3 em{color:var(--gold-l)}
+@media(max-width:960px){.grid{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.grid{grid-template-columns:1fr}}
+
+/* resultados */
+.res .pair{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.ba{position:relative;border-radius:4px;overflow:hidden;background:var(--stone)}
+.ba img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.ba .l{position:absolute;left:16px;padding:6px 12px;background:rgba(255,253,251,.92);font-size:11px;letter-spacing:.24em;text-transform:uppercase;font-weight:500;border-radius:2px}
+.ba .l.t{top:16px}.ba .l.b{top:calc(50% + 16px)}
+.ba-cap{margin-top:18px}
+.ba-cap h3{font-size:24px;margin-bottom:6px}
+.ba-cap p{color:var(--ink2);font-size:16px}
+.note{margin-top:40px;font-size:14px;color:var(--muted);text-align:center}
+@media(max-width:720px){.res .pair{grid-template-columns:1fr}}
+
+/* sobre */
+.about{background:var(--white)}
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:center}
+.about .photo{position:relative}
+.about .photo img{border-radius:4px;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%;width:100%}
+.about .photo::after{content:"Carina Lima";position:absolute;right:-20px;bottom:-26px;font-family:var(--serif);font-style:italic;font-size:54px;color:var(--gold);line-height:1}
+.about h2{margin:18px 0 26px}
+.about p{color:var(--ink2);margin-bottom:18px}
+.about .vals{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px;padding-top:30px;border-top:1px solid var(--line)}
+.about .vals b{display:block;font-family:var(--serif);font-weight:400;font-style:italic;font-size:22px;color:var(--gold)}
+.about .vals span{font-size:14px;color:var(--muted)}
+@media(max-width:900px){.about .wrap{grid-template-columns:1fr;gap:70px}.about .photo::after{right:10px;font-size:42px}}
+
+/* studio */
+.studio .gal{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:300px 300px;gap:18px}
+.studio .gal figure{position:relative;overflow:hidden;border-radius:4px}
+.studio .gal img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.studio .gal figure:hover img{transform:scale(1.04)}
+.studio .gal figure:first-child{grid-row:span 2}
+.studio .gal figcaption{position:absolute;left:14px;bottom:14px;background:rgba(255,253,251,.92);padding:6px 12px;font-size:11px;letter-spacing:.22em;text-transform:uppercase;font-weight:500;border-radius:2px}
+.studio .gal .txt{background:var(--ink);color:var(--bg);padding:34px;display:flex;flex-direction:column;justify-content:center;border-radius:4px}
+.studio .gal .txt p{font-family:var(--serif);font-style:italic;font-size:22px;line-height:1.4}
+.studio .gal .txt small{margin-top:16px;color:var(--gold-l);font-size:12px;letter-spacing:.2em;text-transform:uppercase}
+@media(max-width:860px){.studio .gal{grid-template-columns:1fr 1fr;grid-template-rows:260px 260px 260px}.studio .gal figure:first-child{grid-column:span 2;grid-row:auto}}
+
+/* depoimentos */
+.revs{background:var(--bg2)}
+.revs .top{text-align:center;margin-bottom:60px}
+.revs .top h2{margin:16px 0 14px}
+.revs .top p{color:var(--ink2)}
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.rev{background:var(--white);padding:36px 32px;border-radius:4px}
+.rev .stars{margin-bottom:18px;display:block}
+.rev p{font-family:var(--serif);font-size:19px;line-height:1.55;margin-bottom:24px}
+.rev cite{font-style:normal;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:40px}
+.chips span{border:1px solid var(--gold-l);border-radius:999px;padding:10px 20px;font-size:15px;font-style:italic;font-family:var(--serif)}
+@media(max-width:900px){.rgrid{grid-template-columns:1fr}}
+
+/* cursos */
+.course{padding:90px 0}
+.course .box{border:1px solid var(--gold-l);border-radius:4px;padding:56px;display:flex;justify-content:space-between;align-items:center;gap:40px;flex-wrap:wrap}
+.course h2{font-size:clamp(30px,3.6vw,44px);margin-top:14px}
+.course p{color:var(--ink2);max-width:520px;margin-top:12px}
+@media(max-width:600px){.course .box{padding:36px 26px}}
+
+/* visite */
+.visit{background:var(--ink);color:var(--bg)}
+.visit .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:70px;align-items:stretch}
+.visit h2{margin:16px 0 34px}
+.visit h2 em{color:var(--gold-l)}
+.info{display:grid;gap:26px;margin-bottom:40px}
+.info div{padding-bottom:22px;border-bottom:1px solid rgba(244,240,235,.15)}
+.info small{display:block;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-l);margin-bottom:6px;font-weight:500}
+.info p{color:#E2DAD1}
+.visit .btn-dark{background:var(--gold);color:var(--white)}
+.visit .btn-dark:hover{background:var(--bg);color:var(--ink)}
+.visit .btn-line{border-color:var(--bg);color:var(--bg)}
+.visit .btn-line:hover{background:var(--bg);color:var(--ink)}
+.visit .ctas{display:flex;gap:12px;flex-wrap:wrap}
+.map{border-radius:4px;overflow:hidden;min-height:420px;background:#3a322d}
+.map iframe{width:100%;height:100%;min-height:420px;border:0;filter:grayscale(.4) sepia(.15)}
+@media(max-width:900px){.visit .wrap{grid-template-columns:1fr}}
+
+footer{background:#241E1B;color:#9C9187;padding:40px 0;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer a:hover{color:var(--gold-l)}
+
+.wa{position:fixed;right:22px;bottom:22px;z-index:60;width:60px;height:60px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 12px 30px -8px rgba(0,0,0,.4);transition:.25s}
+.wa:hover{transform:scale(1.07)}
+.wa svg{width:30px;height:30px;fill:#fff}
+
+.rv{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s ease}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#top" class="brand"><span class="mono">CL</span><span><b>CARINA LIMA</b><small>Beauty Studio</small></span></a>
+    <nav class="links">
+      <a href="#avaliacao">Avaliação</a>
+      <a href="#tratamentos">Tratamentos</a>
+      <a href="#resultados">Resultados</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#visite">Visite</a>
+    </nav>
+    <a class="btn btn-dark" href="https://wa.me/5516994066282?text=Ol%C3%A1%2C%20Carina!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar avaliação</a>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Reconstrução de sobrancelhas · Ribeirão Preto</span>
+      <h1>Sob medida para a beleza que <em>existe em você.</em></h1>
+      <p class="lead">Despigmentação a laser, regeneração com Long+ e design de sobrancelhas. Cada caminho começa com uma avaliação feita com técnica, propósito e naturalidade.</p>
+      <div class="ctas">
+        <a class="btn btn-dark" href="https://wa.me/5516994066282?text=Ol%C3%A1%2C%20Carina!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar minha avaliação</a>
+        <a class="btn btn-line" href="#tratamentos">Ver tratamentos</a>
+      </div>
+      <div class="rating">
+        <span class="score">5,0</span>
+        <div><span class="stars">★★★★★</span><small>229 avaliações no Google</small></div>
+      </div>
+    </div>
+    <div class="arch rv">
+      <div class="frame"><img src="img/hero-carina.jpg" alt="Carina Lima no seu studio em Ribeirão Preto"></div>
+      <div class="tag"><b>Carina Lima</b>Especialista em reconstrução<br>de sobrancelhas</div>
+    </div>
+  </div>
+</section>
+
+<section class="manifesto">
+  <div class="wrap rv">
+    <span class="eyebrow">O nosso jeito de cuidar</span>
+    <blockquote>“Eu não realizo procedimento sem avaliação. E não é só uma etapa a mais, <em>é a mais importante.</em>”</blockquote>
+    <p>É ali que entendo a sua pele, os seus fios e o que realmente faz sentido para você. Aqui, nada é feito no automático: eu não sigo padrão, sigo a sua individualidade.</p>
+    <div class="sign">Carina Lima</div>
+  </div>
+</section>
+
+<section class="eval" id="avaliacao">
+  <div class="wrap">
+    <div class="pics rv">
+      <img class="a" src="img/avaliacao.jpg" alt="Carina Lima">
+      <img class="b" src="img/tricoscopio.jpg" alt="Análise da sobrancelha com tricoscópio">
+    </div>
+    <div class="rv">
+      <span class="eyebrow">A avaliação</span>
+      <h2>Toda transformação começa com <em>um olhar atento.</em></h2>
+      <p class="intro">Não existe milagre na reconstrução de sobrancelhas. Existe estratégia. Cada sobrancelha carrega uma história: pigmentos antigos que mudaram de cor, falhas que surgiram com o tempo, fios que ficaram mais ralos.</p>
+      <ol class="steps">
+        <li><div><h3>Análise com tricoscópio</h3><p>Pele e fios analisados em detalhe, identificando alterações que não aparecem a olho nu.</p></div></li>
+        <li><div><h3>Seu histórico</h3><p>Procedimentos anteriores, tonalidade e quantidade de pigmento, cicatrizes e a atividade dos folículos.</p></div></li>
+        <li><div><h3>O caminho certo para você</h3><p>Despigmentação, regeneração, reparo ou design: o plano é definido para o seu caso, sem promessas e sem atalhos.</p></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="treat" id="tratamentos">
+  <div class="wrap">
+    <div class="head rv">
+      <div><span class="eyebrow">Tratamentos</span><h2>Cada técnica tem <em>a sua indicação.</em></h2></div>
+      <p>Nem sempre o caminho é micropigmentação. A avaliação mostra o que a sua sobrancelha ainda tem potencial para recuperar.</p>
+    </div>
+    <div class="grid">
+      <article class="card feat rv">
+        <span class="num">Reconstrução</span>
+        <h3>Despigmentação <em>a laser</em></h3>
+        <p>Remove pigmentos antigos, escurecidos ou acinzentados, devolvendo leveza à pele e abrindo espaço para sobrancelhas mais naturais. Quando necessário, associada ao reparo tecidual.</p>
+        <a href="https://wa.me/5516994066282?text=Ol%C3%A1%2C%20Carina!%20Vim%20pelo%20site%20e%20quero%20saber%20sobre%20a%20despigmenta%C3%A7%C3%A3o%20a%20laser." target="_blank" rel="noopener">Quero saber mais →</a>
+      </article>
+      <article class="card rv">
+        <span class="num">Regeneração</span>
+        <h3>Long+</h3>
+        <p>Protocolo que estimula o crescimento e o fortalecimento dos seus próprios fios, buscando mais densidade e preenchimento de forma natural, sem adicionar pigmento à pele.</p>
+        <a href="https://wa.me/5516994066282?text=Ol%C3%A1%2C%20Carina!%20Vim%20pelo%20site%20e%20quero%20saber%20se%20o%20Long%2B%20%C3%A9%20indicado%20para%20mim." target="_blank" rel="noopener">Quero saber mais →</a>
+      </article>
+      <article class="card rv">
+        <span class="num">Estratégia</span>
+        <h3>Reconstrução de sobrancelhas</h3>
+        <p>Para quem convive com falhas, fios ralos ou um procedimento que não saiu como esperado. Um plano em etapas que combina as técnicas certas para o seu caso.</p>
+        <a href="https://wa.me/5516994066282?text=Ol%C3%A1%2C%20Carina!%20Vim%20pelo%20site%20e%20quero%20saber%20sobre%20a%20reconstru%C3%A7%C3%A3o%20de%20sobrancelhas." target="_blank" rel="noopener">Quero saber mais →</a>
+      </article>
+      <article class="card rv">
+        <span class="num">Desenho</span>
+        <h3>Design de sobrancelhas</h3>
+        <p>Desenho pensado a partir da análise do seu rosto, valorizando a sua expressão com naturalidade.</p>
+        <a href="https://wa.me/5516994066282?text=Ol%C3%A1%2C%20Carina!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20design%20de%20sobrancelhas." target="_blank" rel="noopener">Agendar →</a>
+      </article>
+      <article class="card rv">
+        <span class="num">Alinhamento</span>
+        <h3>Brow Lamination</h3>
+        <p>Fios alinhados e disciplinados, com efeito de sobrancelha mais cheia e penteada.</p>
+        <a href="https://wa.me/5516994066282?text=Ol%C3%A1%2C%20Carina!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20Brow%20Lamination." target="_blank" rel="noopener">Agendar →</a>
+      </article>
+      <article class="card rv">
+        <span class="num">Olhar</span>
+        <h3>Lash Lifting</h3>
+        <p>Curvatura para os seus cílios naturais, para um olhar mais aberto sem extensões.</p>
+        <a href="https://wa.me/5516994066282?text=Ol%C3%A1%2C%20Carina!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20Lash%20Lifting." target="_blank" rel="noopener">Agendar →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="res" id="resultados">
+  <div class="wrap">
+    <div class="head rv">
+      <div><span class="eyebrow">Resultados</span><h2>Você não precisa conviver <em>com as falhas.</em></h2></div>
+      <p>Casos reais atendidos no studio. Cada sobrancelha responde de um jeito, por isso o acompanhamento é feito sessão a sessão.</p>
+    </div>
+    <div class="pair">
+      <div class="rv">
+        <div class="ba"><img src="img/despig-jornada.jpg" alt="Antes e depois de uma jornada de despigmentação"><span class="l t">Antes</span><span class="l b">Depois</span></div>
+        <div class="ba-cap"><h3>Jornada de despigmentação</h3><p>O pigmento antigo, escurecido e acinzentado, deu lugar a sobrancelhas mais leves.</p></div>
+      </div>
+      <div class="rv">
+        <div class="ba"><img src="img/despig-sessao.jpg" alt="Antes e pós-imediato da primeira sessão de despigmentação a laser"><span class="l t">Antes</span><span class="l b">Pós 1ª sessão</span></div>
+        <div class="ba-cap"><h3>Primeira sessão de laser</h3><p>Pós-imediato: o pigmento já começa a perder intensidade logo na primeira sessão.</p></div>
+      </div>
+    </div>
+    <p class="note rv">Resultados variam de pessoa para pessoa. A indicação é definida na avaliação.</p>
+  </div>
+</section>
+
+<section class="about" id="sobre">
+  <div class="wrap">
+    <div class="photo rv"><img src="img/carina.jpg" alt="Carina Lima"></div>
+    <div class="rv">
+      <span class="eyebrow">Quem é Carina Lima</span>
+      <h2>Por trás de cada resultado, <em>existe uma trajetória.</em></h2>
+      <p>Uma história que começou de forma inesperada e ganhou propósito: ajudar mulheres a renovar o olhar e a se reconhecer no espelho de novo.</p>
+      <p>No studio, cada atendimento começa antes do procedimento: na forma como você é recebida, no tempo dedicado a estudar o seu caso e no cuidado com cada detalhe. Mais do que sobrancelhas bonitas, a prioridade é a saúde da sua pele e dos seus pelos.</p>
+      <div class="vals">
+        <div><b>Técnica</b><span>Análise antes de qualquer decisão</span></div>
+        <div><b>Propósito</b><span>Cuidado com a sua história</span></div>
+        <div><b>Naturalidade</b><span>Resultados que parecem seus</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="studio">
+  <div class="wrap">
+    <div class="head rv">
+      <div><span class="eyebrow">O studio</span><h2>Um espaço pensado <em>para você.</em></h2></div>
+      <p>Acolhedor, aconchegante e impecável: é assim que as clientes descrevem o Carina Lima Beauty Studio, no Alto da Boa Vista.</p>
+    </div>
+    <div class="gal rv">
+      <figure><img src="img/recepcao.jpg" alt="Recepção do Carina Lima Beauty Studio"><figcaption>Recepção</figcaption></figure>
+      <figure><img src="img/atendimento.jpg" alt="Carina durante um atendimento"><figcaption>Atendimento</figcaption></figure>
+      <figure><img src="img/longplus.jpg" alt="Produtos do protocolo Long+"><figcaption>Long+</figcaption></figure>
+      <div class="txt"><p>“Sempre retorno no Studio da Carina! Um espaço acolhedor e um cuidado sem igual.”</p><small>Juuh S. · Google</small></div>
+      <figure><img src="img/detalhe.jpg" alt="Carina Lima no studio"><figcaption>Seja bem-vinda</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="revs">
+  <div class="wrap">
+    <div class="top rv">
+      <span class="eyebrow">Quem já viveu a experiência</span>
+      <h2>5,0 em <em>229 avaliações</em></h2>
+      <p>O que as clientes dizem no Google</p>
+    </div>
+    <div class="rgrid">
+      <div class="rev rv"><span class="stars">★★★★★</span><p>“Minha experiência com a Carina foi simplesmente maravilhosa! Desde o primeiro momento, fui super bem acolhida em um ambiente extremamente aconchegante. Ela é uma excelente profissional, muito cuidadosa.”</p><cite>Edna G.</cite></div>
+      <div class="rev rv"><span class="stars">★★★★★</span><p>“Faço minha sobrancelha com a Carina e amo o resultado! O trabalho dela é impecável, super cuidadoso e feito com muito profissionalismo. Além disso, o estúdio é lindo, aconchegante e muito bem organizado.”</p><cite>Mariany T.</cite></div>
+      <div class="rev rv"><span class="stars">★★★★★</span><p>“Sempre retorno no Studio da Carina! Uma profissional de excelência, que oferece um espaço acolhedor e um cuidado sem igual!”</p><cite>Juuh S.</cite></div>
+    </div>
+    <div class="chips rv">
+      <span>“Excelente profissional, ambiente agradável e ótimo design”</span>
+      <span>“A entrega do serviço de alto padrão”</span>
+      <span>“Um trabalho lindo com sobrancelhas e um espaço impecável”</span>
+    </div>
+  </div>
+</section>
+
+<section class="course">
+  <div class="wrap">
+    <div class="box rv">
+      <div><span class="eyebrow">Cursos</span><h2>Quer aprender com <em>a Carina?</em></h2><p>Fale com o studio para conhecer os cursos disponíveis e as próximas turmas.</p></div>
+      <a class="btn btn-line" href="https://wa.me/5516994066282?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20sobre%20os%20cursos." target="_blank" rel="noopener">Quero saber dos cursos</a>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="visite">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Visite o studio</span>
+      <h2>Sua jornada <em>começa aqui.</em></h2>
+      <div class="info">
+        <div><small>Endereço</small><p>Av. Eduardo Lopes da Silva, 130 · Salão 3<br>Alto da Boa Vista · Ribeirão Preto/SP · 14025-500</p></div>
+        <div><small>Horário</small><p>Segunda a sexta · 8h às 19h30<br>Sábado · 8h às 15h · Domingo fechado</p></div>
+        <div><small>WhatsApp</small><p>(16) 99406-6282</p></div>
+      </div>
+      <div class="ctas">
+        <a class="btn btn-dark" href="https://wa.me/5516994066282?text=Ol%C3%A1%2C%20Carina!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar avaliação</a>
+        <a class="btn btn-line" href="https://maps.app.goo.gl/CuM9euqBQzQ7o8VX9" target="_blank" rel="noopener">Como chegar</a>
+      </div>
+    </div>
+    <div class="map rv">
+      <iframe loading="lazy" title="Mapa do Carina Lima Beauty Studio" src="https://www.google.com/maps?q=Carina+Lima+Beauty,+Av.+Eduardo+Lopes+da+Silva,+130,+Alto+da+Boa+Vista,+Ribeir%C3%A3o+Preto&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Carina Lima Beauty Studio · Ribeirão Preto/SP · <a href="https://www.instagram.com/carinalimabeauty/" target="_blank" rel="noopener">@carinalimabeauty</a></span>
+    <span>Site desenvolvido por Zynor Labs</span>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/5516994066282?text=Ol%C3%A1%2C%20Carina!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-2.1 0-4.2-.6-6-1.7l-.4-.3-3.8 1.2 1.2-3.7-.3-.4c-1.2-1.8-1.9-3.9-1.9-6.1C4.8 9.7 9.8 4.8 16 4.8s11.2 4.9 11.2 11-5 10.6-11.2 10.6zm6.1-7.9c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.3-.7.1-.3-.2-1.4-.5-2.7-1.7-1-.9-1.7-2-1.9-2.3-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.5 0-.6-.1-.2-.8-1.8-1-2.5-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.8 5 .8.3 1.4.5 1.9.7.8.3 1.6.2 2.2.1.7-.1 2-.8 2.3-1.6.3-.8.3-1.5.2-1.6-.1-.2-.3-.3-.6-.4z"/></svg>
+</a>
+
+<script>
+const nav=document.getElementById('nav');
+const onS=()=>nav.classList.toggle('solid',scrollY>30);onS();addEventListener('scroll',onS,{passive:true});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
