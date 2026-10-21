@@ -188,9 +188,9 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
 tabs.forEach(b=>b.addEventListener('click',()=>{tabs.forEach(x=>x.setAttribute('aria-selected',x===b));forms.forEach(f=>f.hidden=f.dataset.t!==b.dataset.t)}));
 const send=t=>window.open('https://wa.me/5516993495927?text='+encodeURIComponent(t),'_blank');
 document.getElementById('q-carro').addEventListener('submit',e=>{e.preventDefault();const d=new FormData(e.target);
-send(`Olá! Vim pelo site e queria um orçamento de película 🚗\n\nNome: ${d.get('nome')}\n1️⃣ Modelo do carro: ${d.get('modelo')}\n2️⃣ Insulfilm velho para remover: ${d.get('velho')}\n3️⃣ Para-brisa dianteiro: ${d.get('parabrisa')}`)});
+send(`Olá! Vim pelo site e queria um orçamento de película (veículo)\n\nNome: ${d.get('nome')}\n1) Modelo do carro: ${d.get('modelo')}\n2) Insulfilm velho para remover: ${d.get('velho')}\n3) Para-brisa dianteiro: ${d.get('parabrisa')}`)});
 document.getElementById('q-casa').addEventListener('submit',e=>{e.preventDefault();const d=new FormData(e.target);
-send(`Olá! Vim pelo site e queria um orçamento de película 🏠\n\nNome: ${d.get('nome')}\nPara: ${d.get('tipo')}\nMedidas dos vidros: ${d.get('medidas')}${d.get('bairro')?`\nBairro: ${d.get('bairro')}`:''}\n\nVou mandar uma foto do local aqui na conversa.`)});})();
+send(`Olá! Vim pelo site e queria um orçamento de película (casa ou comércio)\n\nNome: ${d.get('nome')}\nPara: ${d.get('tipo')}\nMedidas dos vidros: ${d.get('medidas')}${d.get('bairro')?`\nBairro: ${d.get('bairro')}`:''}\n\nVou mandar uma foto do local aqui na conversa.`)});})();
 </script>
 </div></section>
 
