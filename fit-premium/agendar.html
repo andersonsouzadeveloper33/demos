@@ -1,0 +1,48 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow"><title>Agendar · FIT Martelinho de Ouro</title><meta name="description" content="Escolha o serviço, o dia e o período, e confirme seu horário na FIT pelo WhatsApp.">
+<link rel="icon" href="img/logo.jpg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body><svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="st" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></symbol><symbol id="wa" viewBox="0 0 32 32"><path fill="currentColor" d="M16 3C9 3 3.3 8.7 3.3 15.7c0 2.5.7 4.9 2 7L3.2 29l6.5-2.1c2 1.1 4.1 1.6 6.3 1.6 7 0 12.7-5.7 12.7-12.7S23 3 16 3zm0 23.2c-2 0-3.9-.5-5.6-1.6l-.4-.2-3.9 1.3 1.3-3.8-.3-.4a10.5 10.5 0 1 1 8.9 4.7zm5.8-7.8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.6-.9-.8-1.6-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6.3-.5c.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5 2.5 1 3 .8 3.6.8.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></symbol><symbol id="arr" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M5 12h14M13 6l6 6-6 6"/></symbol></svg><header class="top"><div class="wrap row"><a class="brand" href="index.html"><img src="img/logo.jpg" alt="Logo FIT Martelinho de Ouro"><span><b>FIT</b><small>Martelinho de ouro</small></span></a>
+<nav class="tabs tabs-d" aria-label="Páginas"><a href="index.html">Início</a><a href="martelinho.html">Martelinho de ouro</a><a href="polimento.html">Polimento e proteção</a><a href="galeria.html">Trabalhos</a><a href="sobre.html">A FIT</a><a href="agendar.html" aria-current="page" class="cta-tab">Agendar</a></nav></div><nav class="tabs tabs-m" aria-label="Páginas"><a href="index.html">Início</a><a href="martelinho.html">Martelinho de ouro</a><a href="polimento.html">Polimento e proteção</a><a href="galeria.html">Trabalhos</a><a href="sobre.html">A FIT</a><a href="agendar.html" aria-current="page" class="cta-tab">Agendar</a></nav></header><main>
+<section style="padding-bottom:30px"><div class="wrap reveal"><p class="crumb"><a href="index.html">Início</a> / Agendar</p><p class="eyebrow">Agendamento online</p><h2>Escolha seu<br><span class="goldtxt">horário</span></h2>
+<p class="lead" style="margin-top:16px">Em 3 passos. A FIT confirma o horário com você pelo WhatsApp.</p></div></section>
+<section style="padding-top:0"><div class="wrap agenda">
+<form class="box reveal" id="ag">
+<p class="step-t"><i>1</i>Serviço</p><div class="opts"><label class="opt"><input type="radio" name="servico" value="Avaliação de martelinho" data-k="martelinho" required><span>Avaliação de martelinho<small>Amassados, sem repintura</small></span></label><label class="opt"><input type="radio" name="servico" value="Polimento técnico" data-k="polimento" required><span>Polimento técnico<small>Brilho e riscos leves</small></span></label><label class="opt"><input type="radio" name="servico" value="Cristalização" data-k="cristalizacao" required><span>Cristalização<small>Brilho e proteção</small></span></label><label class="opt"><input type="radio" name="servico" value="Vitrificação" data-k="vitrificacao" required><span>Vitrificação<small>Proteção prolongada</small></span></label><label class="opt"><input type="radio" name="servico" value="Retoques" data-k="retoques" required><span>Retoques<small>Pequenos reparos</small></span></label></div>
+<p class="step-t"><i>2</i>Dia e período</p><div class="days" id="days"></div>
+<div class="opts" style="grid-template-columns:repeat(2,1fr)"><label class="opt"><input type="radio" name="periodo" value="Manhã" required><span>Manhã<small>8h às 12h</small></span></label><label class="opt"><input type="radio" name="periodo" value="Tarde" required><span>Tarde<small>13h às 18h</small></span></label></div>
+<p class="step-t"><i>3</i>Seus dados</p>
+<label class="field">Seu nome<input name="nome" required placeholder="Como podemos te chamar?" autocomplete="name"></label>
+<label class="field">Carro (modelo e ano)<input name="carro" required placeholder="Ex.: Compass 2021"></label>
+<label class="field">Observação (opcional)<textarea name="obs" rows="3" placeholder="Ex.: amassado na porta traseira direita"></textarea></label>
+<button class="btn btn-gold btn-block" type="submit"><svg width="20" height="20" aria-hidden="true"><use href="#wa"/></svg>Confirmar pelo WhatsApp</button>
+</form>
+<aside class="box sum reveal" aria-live="polite"><p class="step-t" style="margin-top:0">Resumo</p>
+<ul><li><span>Serviço</span><b id="r-s">—</b></li><li><span>Dia</span><b id="r-d">—</b></li><li><span>Período</span><b id="r-p">—</b></li></ul>
+<p class="note">O horário é confirmado pela FIT no WhatsApp, de acordo com a agenda da oficina.</p>
+<p class="note">Atendimento: seg a sex 8h às 18h · sáb 8h às 12h</p></aside>
+</div></section>
+<script>
+(()=>{const wd=['Dom','Seg','Ter','Qua','Qui','Sex','Sáb'],mo=['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'];
+const box=document.getElementById('days');let d=new Date();d.setHours(12);let n=0;
+while(n<12){d.setDate(d.getDate()+1);if(d.getDay()===0)continue;const v=`${wd[d.getDay()]} ${d.getDate()}/${String(d.getMonth()+1).padStart(2,'0')}`;
+box.insertAdjacentHTML('beforeend',`<label class="opt"><input type="radio" name="dia" value="${v}" data-sab="${d.getDay()===6}" required><span>${wd[d.getDay()]}<b>${d.getDate()}</b>${mo[d.getMonth()]}</span></label>`);n++}
+const f=document.getElementById('ag'),$=id=>document.getElementById(id);
+const pre=new URLSearchParams(location.search).get('s');if(pre){const i=f.querySelector(`input[data-k="${pre}"]`);if(i)i.checked=true}
+const upd=()=>{const fd=new FormData(f);$('r-s').textContent=fd.get('servico')||'—';$('r-d').textContent=fd.get('dia')||'—';$('r-p').textContent=fd.get('periodo')||'—';
+const sab=f.querySelector('input[name=dia]:checked')?.dataset.sab==='true';const t=f.querySelector('input[value=Tarde]');t.disabled=sab;if(sab&&t.checked){t.checked=false;$('r-p').textContent='—'}t.nextElementSibling.style.opacity=sab?.35:1};
+f.addEventListener('change',upd);upd();
+f.addEventListener('submit',ev=>{ev.preventDefault();const fd=new FormData(f);
+const msg=`Olá! Vim pelo site e gostaria de agendar um horário na FIT.\n\nServiço: ${fd.get('servico')}\nDia: ${fd.get('dia')}\nPeríodo: ${fd.get('periodo')}\nCarro: ${fd.get('carro')}\nNome: ${fd.get('nome')}${fd.get('obs')?`\nObservação: ${fd.get('obs')}`:''}\n\nPodem confirmar?`;
+window.open('https://wa.me/5516993333313?text='+encodeURIComponent(msg),'_blank')});})();
+</script></main><footer><div class="wrap"><div class="cols">
+<div><a class="brand" href="index.html"><img src="img/logo.jpg" alt=""><span><b>FIT</b><small>Martelinho de ouro</small></span></a><p style="margin-top:16px;max-width:340px">Aqui fazemos você se apaixonar pelos detalhes. Martelinho de ouro, polimento e proteção de pintura na Vila Tibério, Ribeirão Preto.</p></div>
+<div><h4>Endereço</h4><ul><li>R. Castro Alves, 244, Vila Tibério</li><li>Ribeirão Preto/SP (perto da Sodimac)</li><li><a href="https://www.google.com/maps/search/?api=1&query=FIT%20MARTELINHO%20DE%20OURO%2C%20R.%20Castro%20Alves%2C%20244%20-%20Vila%20Tiberio%2C%20Ribeir%C3%A3o%20Preto%20-%20SP" target="_blank" rel="noopener">Como chegar →</a></li></ul></div>
+<div><h4>Atendimento</h4><ul><li>Seg a sex: 8h às 18h</li><li>Sábado: 8h às 12h</li><li><a href="https://wa.me/5516993333313?text=Ol%C3%A1%21%20Vim%20pelo%20site." target="_blank" rel="noopener">WhatsApp (16) 99333-3313</a></li><li><a href="https://www.instagram.com/fitmartelinhodeouro/" target="_blank" rel="noopener">@fitmartelinhodeouro</a></li></ul></div>
+</div><div class="base"><span>© 2026 FIT Martelinho de Ouro</span><span>Site desenvolvido por Zynor Labs</span></div></div></footer>
+<a class="float" href="https://wa.me/5516993333313?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20queria%20falar%20com%20voc%C3%AAs." target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg aria-hidden="true"><use href="#wa"/></svg></a>
+<script>
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const cur=document.querySelector('.tabs-m [aria-current]');if(cur)cur.scrollIntoView({inline:'center',block:'nearest'});
+</script></body></html>
