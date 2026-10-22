@@ -174,10 +174,10 @@ footer b{color:var(--teal-d)}
 .float svg{width:32px;height:32px}
 
 /* lightbox */
-.lb{position:fixed;inset:0;background:rgba(10,30,30,.92);display:none;align-items:center;justify-content:center;z-index:100;padding:20px}
-.lb.on{display:flex}
-.lb img{max-height:88vh;max-width:94vw;border-radius:16px}
-.lb button{position:absolute;top:16px;right:16px;width:46px;height:46px;border-radius:50%;border:0;background:#fff;font-size:1.4rem;cursor:pointer}
+.lbx{position:fixed;inset:0;background:rgba(10,30,30,.92);display:none;align-items:center;justify-content:center;z-index:100;padding:20px}
+.lbx.on{display:flex}
+.lbx img{max-height:88vh;max-width:94vw;border-radius:16px}
+.lbx button{position:absolute;top:16px;right:16px;width:46px;height:46px;border-radius:50%;border:0;background:#fff;font-size:1.4rem;cursor:pointer}
 </style>
 </head>
 <body>
@@ -429,7 +429,7 @@ footer b{color:var(--teal-d)}
 
 <a class="float" href="https://wa.me/5516981619404?text=Ol%C3%A1!%20Vi%20o%20site%20e%20quero%20agendar%20um%20hor%C3%A1rio%20para%20o%20meu%20pet." target="_blank" rel="noopener" aria-label="WhatsApp"><svg style="color:#fff"><use href="#wa"/></svg></a>
 
-<div class="lb" id="lb"><button aria-label="Fechar">×</button><img alt=""></div>
+<div class="lbx" id="lb"><button aria-label="Fechar">×</button><img alt=""></div>
 
 <script>
 document.getElementById('qf').addEventListener('submit',function(e){
